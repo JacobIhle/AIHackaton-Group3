@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SustainaBiteAPI", "Sustaina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechToTextCL", "..\SpeechToTextCL\SpeechToTextCL.csproj", "{9AE17801-E022-4A3E-84F8-D77BB613206F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSpeechToText", "..\ConsoleSpeechToText\ConsoleSpeechToText.csproj", "{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{9AE17801-E022-4A3E-84F8-D77BB613206F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AE17801-E022-4A3E-84F8-D77BB613206F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AE17801-E022-4A3E-84F8-D77BB613206F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
