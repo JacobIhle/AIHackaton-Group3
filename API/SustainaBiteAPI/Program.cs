@@ -25,7 +25,7 @@ builder.Services.AddDallE(options =>
         apiVersion: builder.Configuration.GetValue<string>("AzureOpenAI:DallE:ApiVersion")
     );
 
-    options.DefaultResolution = DallEImageResolutions.Small;     // Default: Large (1024x1024)
+    options.DefaultResolution = DallEImageResolutions.Medium;     // Default: Large (1024x1024)
     //options.DefaultImageCount = 2;  // Default: 1
 });
 
