@@ -1,3 +1,6 @@
+using DallENet;
+using DallENet.Models;
+using DallENet.ServiceConfigurations;
 using SustainaBiteAPI.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +13,21 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<ChatRepository>();
+builder.Services.AddTransient<ImageGeneratorRepository>();
+
+builder.Services.AddDallE(options =>
+{
+    // Azure OpenAI Service.
+    options.UseAzure(
+        resourceName: builder.Configuration.GetValue<string>("AzureOpenAI:DallE:ResourceName"),
+        apiKey: builder.Configuration.GetValue<string>("AzureOpenAI:DallE:Key"),
+        authenticationType: AzureAuthenticationType.ApiKey,
+        apiVersion: builder.Configuration.GetValue<string>("AzureOpenAI:DallE:ApiVersion")
+    );
+
+    options.DefaultResolution = DallEImageResolutions.Small;     // Default: Large (1024x1024)
+    //options.DefaultImageCount = 2;  // Default: 1
+});
 
 var app = builder.Build();
 
@@ -24,3 +42,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public record class Request(string Prompt);

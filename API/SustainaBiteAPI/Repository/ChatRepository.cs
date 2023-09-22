@@ -9,12 +9,12 @@ namespace SustainaBiteAPI.Repository
 
         public ChatRepository(IConfiguration configuration) => _configuration = configuration;
 
-        public async Task<string> GetAsync(string[] ingredient)
+        internal async Task<string> GetAsync(string[] ingredient)
         {
             return await GetAsync($"Give me a recipie containing given ingredients: {string.Join(", ", ingredient)}");
         }
 
-        public async Task<string> GetAsync(string question)
+        internal async Task<string> GetAsync(string question)
         {
             OpenAIClient client = new OpenAIClient(
             new Uri(_configuration["AzureOpenAI:Endpoint"]),
