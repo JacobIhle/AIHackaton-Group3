@@ -27,7 +27,7 @@ namespace SustainaBiteAPI.Repository
                 {
                     Messages =
                     {
-                        new ChatMessage(ChatRole.System, @"You answer only food-related questions. You answer funny food-related jokes."),
+                        new ChatMessage(ChatRole.System, @"You are an AI assistant that helps people find recipies. You answer only food-related questions."),
                         new ChatMessage(ChatRole.User, question),
                     },
                     Temperature = (float)0.7,
