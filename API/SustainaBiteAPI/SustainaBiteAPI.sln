@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SustainaBiteAPI", "SustainaBiteAPI.csproj", "{2E194411-3874-44E5-BF54-6F64118254E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SustainaBiteAPI", "SustainaBiteAPI.csproj", "{2E194411-3874-44E5-BF54-6F64118254E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechToTextCL", "..\SpeechToTextCL\SpeechToTextCL.csproj", "{9AE17801-E022-4A3E-84F8-D77BB613206F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSpeechToText", "..\ConsoleSpeechToText\ConsoleSpeechToText.csproj", "{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2E194411-3874-44E5-BF54-6F64118254E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E194411-3874-44E5-BF54-6F64118254E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E194411-3874-44E5-BF54-6F64118254E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE17801-E022-4A3E-84F8-D77BB613206F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE17801-E022-4A3E-84F8-D77BB613206F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE17801-E022-4A3E-84F8-D77BB613206F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE17801-E022-4A3E-84F8-D77BB613206F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2613BB19-4C9E-4ABC-AEAC-743DAB30F8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
