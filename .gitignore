@@ -5,6 +5,12 @@
 /.pnp
 .pnp.js
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+bin/
+obj/
+
 # testing
 /coverage
 

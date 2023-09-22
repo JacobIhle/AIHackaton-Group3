@@ -16,5 +16,11 @@ namespace SustainaBiteAPI.Controllers
         {
             return Ok(await _chatRepository.GetAsync(ingredient));
         }
+
+        [HttpGet("question")]
+        public async Task<IActionResult> RequestAsync([FromQuery] string question)
+        {
+            return Ok(await _chatRepository.GetAsync(question));
+        }
     }
 }
